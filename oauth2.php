@@ -1,7 +1,7 @@
 <?php
 	
 // requiring oauth2 library from https://github.com/thephpleague/oauth2-client
-require_once "/home/dh_cvdrjv/hwg.orbital-path.com/private/vendor/autoload.php";
+require_once "/home/user/hwg.orbital-path.com/private/vendor/autoload.php";
 
 $provider = new \League\OAuth2\Client\Provider\GenericProvider([
     'clientId'                => 'xxx',    // The client ID assigned to you by the provider
