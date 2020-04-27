@@ -1,6 +1,6 @@
 <?php
 	
-
+// requiring oauth2 library from https://github.com/thephpleague/oauth2-client
 require_once "/home/dh_cvdrjv/hwg.orbital-path.com/private/vendor/autoload.php";
 
 $provider = new \League\OAuth2\Client\Provider\GenericProvider([
@@ -17,7 +17,7 @@ try {
 
     // Try to get an access token using the client credentials grant.
 
-    $accessToken = $provider->getAccessToken('client_credentials');
+    $accessToken = $provider->getAccessToken('client_credentials', 'hydrofarmApi read write');
 
 } catch (\League\OAuth2\Client\Provider\Exception\IdentityProviderException $e) {
 
